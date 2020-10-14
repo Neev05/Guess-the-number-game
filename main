@@ -1,1 +1,21 @@
-
+n = 18
+chance = 9
+print("Welcome to the number guessing game")
+print("You will have 9 chances to guess the number")
+while(True):
+    chance = chance-1
+    print("Please guess the number")
+    n1 = int(input())
+    if chance == 0:
+        print("Game Over no chance left")
+        break
+    elif n1<n:
+        print("Please enter a greater number")
+        print("Chances left=", chance)
+    elif n1>n:
+        print("Please enter a smaller number")
+        print("Chances left=", chance)
+    else:
+        print("You won the game")
+        print("You took chance", 9 - chance, "to win the game")
+        break
